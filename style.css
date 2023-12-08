@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: gray;
+    position: fixed;
+    width:100%;
+}
+
+.logo{
+    display:block;
+    padding: 11px;
+    font-size: 20px;
+    color:white;
+}
+.toggle{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: none;
+}
+.navlinks ul{
+    display:flex;
+
+}
+.navlinks ul li{
+    list-style: none;
+}
+.navlinks ul li a{
+    padding:16px;
+    display: block;
+    font-size: 20px;
+    color:black;
+    text-decoration: none;
+    transition:0.5s;
+    color:white
+}
+ .navlinks ul li a:hover{
+    background-color:lightgray;
+    color:black;
+}
+.icons ul{
+display:flex;
+color:red;
+
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li a{
+    display:block;
+    padding:16px;
+    color:black;
+    color:white;
+}
+@media screen and (max-width:800px){
+    .toggle{
+        display:block;
+    }
+    .navbar{
+        display:flex;
+        flex-direction: column;
+    }
+    .navlinks{
+        display:none;
+        background-color: rgb(110, 108, 108);
+    }
+    .navlinks ul{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        margin-top: 10px;
+        
+    }
+    .navbar ul li{
+        text-align: center;
+    }
+    .icons{
+        position: absolute;
+        top:-100px
+
+    }
+    .active{
+        display:flex
+    }
+    .navlinks ul li a{
+        font-size: 15px;
+        color:white;
+    }
+    .logo{
+        font-size: 18px;
+        color:white
+    }
+    .navlinks ul li a:hover{
+        background-color:lightgray ;
+        color:black
+    }
+    .navbar{
+        background-color:gray;
+    }
+}
